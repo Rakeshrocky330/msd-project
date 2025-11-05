@@ -1,0 +1,137 @@
+.ai-coach {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.coach-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #667eea;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s;
+}
+
+.coach-toggle:hover {
+  background: #764ba2;
+  transform: scale(1.1);
+}
+
+.coach-window {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.coach-header {
+  background: #667eea;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.coach-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.coach-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome-message p {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message p {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+  max-width: 80%;
+}
+
+.message.user p {
+  background: #667eea;
+  color: white;
+  margin-left: auto;
+}
+
+.message.assistant p {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.coach-input {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.coach-input input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.coach-input input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.coach-input button {
+  padding: 8px 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.coach-input button:hover:not(:disabled) {
+  background: #764ba2;
+}
+
+.coach-input button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

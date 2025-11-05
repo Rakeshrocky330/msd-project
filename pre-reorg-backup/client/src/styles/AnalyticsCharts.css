@@ -1,0 +1,144 @@
+.analytics-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container.full-width {
+  grid-column: 1 / -1;
+}
+
+.chart-container h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-label {
+  min-width: 100px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.bar-wrapper {
+  flex: 1;
+  background: #f0f0f0;
+  height: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bar {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  min-width: 40px;
+}
+
+.bar-value {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pie-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pie-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pie-segment {
+  height: 20px;
+  border-radius: 3px;
+}
+
+.pie-item.happy .pie-segment {
+  background: #fbbf24;
+}
+
+.pie-item.neutral .pie-segment {
+  background: #9ca3af;
+}
+
+.pie-item.sad .pie-segment {
+  background: #ef4444;
+}
+
+.pie-label {
+  font-size: 13px;
+  color: #666;
+  min-width: 120px;
+}
+
+.topics-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background: #f9f9f9;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #666;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #333;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.col-topic {
+  font-weight: 500;
+}
+
+.col-hours,
+.col-logs {
+  text-align: center;
+}

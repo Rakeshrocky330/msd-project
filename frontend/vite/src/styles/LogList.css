@@ -1,0 +1,193 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+}
+
+.log-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.log-item.completed {
+  opacity: 0.7;
+}
+
+.log-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.log-title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.log-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.log-item h3 {
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.log-item.completed h3 {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.log-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.3s;
+}
+
+.btn-edit {
+  background: #667eea;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #764ba2;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.log-details {
+  padding: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  white-space: pre-wrap;
+}
+
+.log-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.log-meta span {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.mood-happy {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+}
+
+.mood-neutral {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+}
+
+.mood-sad {
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+}
+
+.log-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.log-tags .tag {
+  background: #667eea;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.log-urls {
+  margin-bottom: 15px;
+}
+
+.log-urls h4 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.log-urls a {
+  display: block;
+  color: #667eea;
+  text-decoration: none;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+
+.log-urls a:hover {
+  text-decoration: underline;
+}
+
+.ai-summary {
+  background: #f0f4ff;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.ai-summary h4 {
+  color: #667eea;
+  margin-bottom: 8px;
+}
+
+.ai-summary p {
+  color: #666;
+  font-size: 14px;
+}
+
+.log-date {
+  color: #999;
+  font-size: 12px;
+  margin-top: 15px;
+}

@@ -1,0 +1,101 @@
+.portfolio-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.portfolio-content {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-header h1 {
+  color: #333;
+  margin: 0;
+}
+
+.portfolio-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-share,
+.btn-export {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-edit {
+  background: #667eea;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #764ba2;
+}
+
+.btn-share {
+  background: #10b981;
+  color: white;
+}
+
+.btn-share:hover {
+  background: #059669;
+}
+
+.btn-export {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-export:hover {
+  background: #d97706;
+}
+
+.share-link-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.share-link-box p {
+  margin: 0;
+  color: #666;
+}
+
+.share-link-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.share-link-box button {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.share-link-box button:hover {
+  background: #764ba2;
+}
