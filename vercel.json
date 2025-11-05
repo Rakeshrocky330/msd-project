@@ -1,13 +1,27 @@
 {
   "version": 2,
+  "projectSettings": {
+    "sourceFilesOutsideRootDirectory": true
+  },
+  "buildCommand": "cd frontend/vite && npm run build",
+  "outputDirectory": "frontend/vite/dist",
+  "installCommand": "npm install",
+  "framework": "vite",
   "builds": [
     {
-      "src": "client/package.json",
+      "src": "frontend/vite/package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "dist" }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
+    }
+  ],
+  "env": {
+    "VITE_API_URL": "@vite_api_url",
+    "REACT_APP_API_URL": "@react_app_api_url"
+  }
 }
