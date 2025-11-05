@@ -1,5 +1,3 @@
-"use client"
-
 import "../styles/StreakCalendar.css"
 
 export default function StreakCalendar({ logs }) {

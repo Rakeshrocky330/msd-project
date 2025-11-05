@@ -1,5 +1,3 @@
-"use client"
-
 import "../styles/AnalyticsCharts.css"
 
 export default function AnalyticsCharts({ data }) {
