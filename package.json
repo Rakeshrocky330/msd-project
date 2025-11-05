@@ -8,7 +8,7 @@
     "client": "cd frontend/vite && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node backend/server/index.js",
-    "start": "cd frontend/vite && pnpm start"
+    "start": "node backend/server/index.js"
   },
   "dependencies": {
     "@radix-ui/react-slot": "latest",
