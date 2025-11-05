@@ -22,8 +22,8 @@ app.get('/health', (req, res) => {
   });
 });
 
-// SPA fallback - serve index.html for all routes
-app.get('/*', (req, res) => {
+// SPA fallback - serve index.html for all routes (using regex for Express 5 compatibility)
+app.get(/^\//, (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
